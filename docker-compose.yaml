@@ -1,0 +1,6 @@
+services:
+  debian-assembly-toolkit:
+    container_name: debian-assembly-toolkit
+    build: .
+    volumes:
+      - ./src:/usr/app
