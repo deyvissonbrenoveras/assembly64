@@ -8,7 +8,7 @@
 
 ### Compiling
 - docker exec -it debian-assembly-toolkit bash
-- nasm -felf64 file.asm -o file.o
-- ld -o file.o
-- chmod u+x file
-- ./file
+- nasm -felf64 change_me.asm -o program.o
+- ld -o program program.o
+- chmod u+x program
+- ./program
