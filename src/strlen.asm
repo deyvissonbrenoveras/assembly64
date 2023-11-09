@@ -2,20 +2,20 @@ global _start
 
 section .data
 
-text_string: db "abcdef", 0
-section.text
+test_string: db "abcdef", 0
+section .text
 
 strlen:
     xor rax, rax
 
 .loop:
-    cpm byte [rdi+rax]
+    cmp byte [rdi+rax], 0
     je .end
     inc rax
 
     jmp .loop
 
-.end
+.end:
     ret
 
 _start:
